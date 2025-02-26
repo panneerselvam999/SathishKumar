@@ -234,12 +234,76 @@ body {
 /* about - end */
 
 
+/* skills - start */
+.skills {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 50px;
+}
+
+.skills-heading{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.skills-main{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  border: 1px solid black;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 8px;
+}
+
+.skills-main p{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.skills-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.skills-img img{
+  height: 70px;
+  width: 70px;
+}
+/* skills - end */
+
+
+/* portfolio - start */
+.portfolio {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 50px;
+}
+/* portfolio - end */
+
+
 /* contact - start */
 
 .contact {
   background-color: aquamarine;
   display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
+
 .contact-text {
   width: 50%;
   height: 100%;
@@ -247,6 +311,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .contact-text h2 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -476,3 +541,12 @@ body {
 
 
 /* contact - end */
+
+
+/* footer - start  */
+.footer {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* footer - end */
