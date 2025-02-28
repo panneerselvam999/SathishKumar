@@ -22,10 +22,122 @@ html {
   scroll-margin-top: 70px;
 }
 
-/* ... rest of your CSS ... */
 body {
   height: 100%;
   width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.75rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 0.875rem;
+  }
+} */
+
+.btn {
+  padding: 10px 20px;
+  font-weight: 600;
 }
 
 /* nav - start */
@@ -99,12 +211,14 @@ body {
   height: 600px;
   margin-top: 60px;
   display: flex;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 .hero-left {
   width: 60%;
   height: 100%;
-  background-color: sandybrown;
+  /* background-color: sandybrown; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,25 +229,40 @@ body {
   color: black;
 }
 
-.hero-text h3 {
-  font-size: 2rem;
+/* .hero-text h3 {
+  font-size: 2.5rem;
   font-weight: 500;
+} */
+
+/* .hero-text h1 {
+  font-size: 4.3rem;
+  font-weight: 600;
+  } */
+
+/* .hero-text h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  } */
+
+.hero-text h3 {
+  font-size: clamp(1.1rem, 5vw, 1.8rem);
+  font-weight: 600;
 }
 
 .hero-text h1 {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 600;
 }
 
 .hero-text h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: clamp(1.3rem, 5vw, 2.1rem);
+  font-weight: 600;
 }
 
 .hero-right {
   width: 40%;
   height: 100%;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 /* .hero-img{
@@ -179,7 +308,7 @@ body {
 /* about - start */
 .about {
   height: 500px;
-  background-color: lightblue;
+  /* background-color: lightblue; */
   width: 100%;
   display: flex;
   padding-right: 10%;
@@ -200,7 +329,7 @@ body {
 }
 
 .about-right {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 50%;
   height: 100%;
   display: flex;
@@ -212,6 +341,17 @@ body {
 .about-right h2 {
   font-size: 2.5rem;
   font-weight: 700;
+}
+
+.sec-head {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
+
+.download-res {
+  margin-top: 15px;
 }
 
 @media (max-width: 768px) {
@@ -231,8 +371,13 @@ body {
   }
 }
 
-/* about - end */
+@media (max-width: 480px) {
+  .about-right h2 {
+    font-size: 1.7rem;
+  }
+}
 
+/* about - end */
 
 /* skills - start */
 .skills {
@@ -247,38 +392,46 @@ body {
   padding-bottom: 50px;
 }
 
-.skills-heading{
+.skills-heading {
   font-size: 2rem;
   font-weight: 700;
 }
-.skills-main{
+
+.skills-main {
   display: flex;
   align-items: center;
   width: 300px;
-  border: 1px solid black;
+  border: 1px solid rgb(98, 98, 98);
   gap: 15px;
   border-radius: 10px;
   padding: 8px;
 }
 
-.skills-main p{
+.skills-main p {
   font-size: 1.2rem;
   font-weight: 500;
 }
 
-.skills-container{
+.skills-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.skills-img img{
+
+.skills-img img {
   height: 70px;
   width: 70px;
 }
-/* skills - end */
 
+@media (max-width: 480px) {
+  .sec-head {
+    font-size: 1.7rem;
+  }
+}
+
+/* skills - end */
 
 /* portfolio - start */
 .portfolio {
@@ -292,16 +445,49 @@ body {
   padding-left: 10%;
   padding-bottom: 50px;
 }
-/* portfolio - end */
 
+.exp-head {
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.exp-head div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edu {
+  margin-top: 25px;
+}
+
+.edu-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* portfolio - end */
 
 /* contact - start */
 
 .contact {
-  background-color: aquamarine;
-  display: flex;
+  /* background-color: aquamarine; */
+  /* display: flex; */
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.get-in-touch {
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  gap: 20px;
+  /* background-color: green; */
 }
 
 .contact-text {
@@ -310,21 +496,49 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background-color: #818181; */
 }
 
-.contact-text h2 {
+/* .contact-name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.contact-name {
+  margin-bottom: 10px;
+}
+
+.contact-name h3 {
   font-size: 2.5rem;
   font-weight: 700;
 }
+
+.contact-name h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.contact-details {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.contact-details div {
+  margin-right: 10px;
+  padding: 5px;
+}
+
 
 .contact-form {
   width: 50%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
 }
-
 
 .form {
   display: flex;
@@ -534,14 +748,23 @@ body {
     padding-bottom: 50px;
   }
 
+  .contact-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-name h3 {
+    font-size: 2rem;
+  }
+
   .contact-form {
     width: 100%;
+    justify-content: center;
   }
 }
 
-
 /* contact - end */
-
 
 /* footer - start  */
 .footer {
