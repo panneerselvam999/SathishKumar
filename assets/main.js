@@ -49,11 +49,15 @@ psk.classList.add('show');
 gs.classList.remove('show');
 
 pmScheme.addEventListener('click', () => {
-  psk.classList.add('show');  // Show PMKUSUM images
-  gs.classList.remove('show'); // Hide Green School images
+  psk.classList.add('show');  
+  gs.classList.remove('show'); 
+  pmScheme.classList.add('photo-active');
+  greenSchool.classList.remove('photo-active');
 });
 
 greenSchool.addEventListener('click', () => {
-  gs.classList.add('show');   // Show Green School images
-  psk.classList.remove('show'); // Hide PMKUSUM images
+  gs.classList.add('show');   
+  psk.classList.remove('show'); 
+  pmScheme.classList.remove('photo-active');
+  greenSchool.classList.add('photo-active');
 });
