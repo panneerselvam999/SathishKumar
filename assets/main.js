@@ -38,26 +38,93 @@ document.getElementById('nav-toggle').addEventListener('click', function () {
 
 
 
+// const pmScheme = document.querySelector('.pm-scheme');
+// const greenSchool = document.querySelector('.green-school');
+// const meeting = document.querySelector('.meeting');
+
+// const psk = document.querySelector('.psk');
+// const gs = document.querySelector('.gs');
+// const fm = document.querySelector('.fm');
+
+// // Initially show only PMKUSUM Scheme images
+// psk.classList.add('show');
+// gs.classList.remove('show');
+// fm.classList.remove('show');
+
+// pmScheme.addEventListener('click', () => {
+//   psk.classList.add('show');  
+//   gs.classList.remove('show'); 
+//   fm.classList.remove('show');
+
+//   pmScheme.classList.add('photo-active');
+//   greenSchool.classList.remove('photo-active');
+//   meeting.classList.remove('photo-active');
+// });
+
+// greenSchool.addEventListener('click', () => {
+//   gs.classList.add('show');   
+//   psk.classList.remove('show'); 
+//   fm.classList.remove('show');
+
+//   pmScheme.classList.remove('photo-active');
+//   greenSchool.classList.add('photo-active');
+//   meeting.classList.remove('photo-active');
+// });
+
+// meeting.addEventListener('click', () => {
+//   fm.classList.add('show');   
+//   psk.classList.remove('show'); 
+//   gs.classList.remove('show');
+
+//   pmScheme.classList.remove('photo-active');
+//   greenSchool.classList.remove('photo-active');
+//   meeting.classList.add('photo-active');
+// }
+
+
 const pmScheme = document.querySelector('.pm-scheme');
 const greenSchool = document.querySelector('.green-school');
+const meeting = document.querySelector('.meeting');
 
 const psk = document.querySelector('.psk');
 const gs = document.querySelector('.gs');
+const fm = document.querySelector('.fm');
 
-// Initially show only PMKUSUM Scheme images
-psk.classList.add('show');
-gs.classList.remove('show');
+if (pmScheme && greenSchool && meeting && psk && gs && fm) {
+  // Initially show only PMKUSUM Scheme images
+  psk.classList.add('show');
+  gs.classList.remove('show');
+  fm.classList.remove('show');
 
-pmScheme.addEventListener('click', () => {
-  psk.classList.add('show');  
-  gs.classList.remove('show'); 
-  pmScheme.classList.add('photo-active');
-  greenSchool.classList.remove('photo-active');
-});
+  pmScheme.addEventListener('click', () => {
+    psk.classList.add('show');
+    gs.classList.remove('show');
+    fm.classList.remove('show');
 
-greenSchool.addEventListener('click', () => {
-  gs.classList.add('show');   
-  psk.classList.remove('show'); 
-  pmScheme.classList.remove('photo-active');
-  greenSchool.classList.add('photo-active');
-});
+    pmScheme.classList.add('photo-active');
+    greenSchool.classList.remove('photo-active');
+    meeting.classList.remove('photo-active');
+  });
+
+  greenSchool.addEventListener('click', () => {
+    gs.classList.add('show');
+    psk.classList.remove('show');
+    fm.classList.remove('show');
+
+    pmScheme.classList.remove('photo-active');
+    greenSchool.classList.add('photo-active');
+    meeting.classList.remove('photo-active');
+  });
+
+  meeting.addEventListener('click', () => {
+    fm.classList.add('show');
+    psk.classList.remove('show');
+    gs.classList.remove('show');
+
+    pmScheme.classList.remove('photo-active');
+    greenSchool.classList.remove('photo-active');
+    meeting.classList.add('photo-active');
+  });
+} else {
+  console.error("One or more elements not found in the DOM.");
+}
