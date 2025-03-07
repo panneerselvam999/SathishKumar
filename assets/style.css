@@ -687,6 +687,7 @@ nav ul {
   gap: 10px;
   max-width: 350px;
   /* background-color: #fff; */
+  background-color: #051d39;
   padding: 20px;
   border-radius: 10px;
   position: relative;
@@ -802,7 +803,8 @@ nav ul {
   content: " ";
   width: 1.7rem;
   height: 2px;
-  background: #cacaca;
+  /* background: #cacaca; */
+  background: #051d39;
   top: 50%;
   left: 1.5em;
   position: absolute;
@@ -831,7 +833,7 @@ nav ul {
   top: -2px;
   left: 0.625rem;
   position: absolute;
-  background: white;
+  background: #051d39;
   transition: width 0.5s ease-out, left 0.3s ease-out;
 }
 
@@ -841,7 +843,7 @@ nav ul {
   right: 1.875rem;
   bottom: -2px;
   position: absolute;
-  background: white;
+  background: #051d39;
   transition: width 0.5s ease-out, right 0.3s ease-out;
 }
 
@@ -851,7 +853,7 @@ nav ul {
   right: 0.625rem;
   bottom: -2px;
   position: absolute;
-  background: white;
+  background: #051d39;
   transition: width 0.5s ease-out, right 0.3s ease-out;
 }
 
