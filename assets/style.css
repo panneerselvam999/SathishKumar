@@ -535,6 +535,11 @@ nav ul {
   /* width: max-content; */
 }
 
+.img-title{
+  background-color: #1f436c;
+  border-radius: 5px;
+  padding-left: 10px;
+}
 .img-img {
   margin-top: 20px;
 
