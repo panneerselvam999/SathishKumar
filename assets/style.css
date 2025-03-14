@@ -332,7 +332,7 @@ nav ul {
   padding-right: 10%;
   padding-left: 10%;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 90px;
 }
 
 .about-left {
@@ -554,6 +554,11 @@ nav ul {
   margin-bottom: 10px;
   margin-top: 20px;
 }
+/* .img-boc-inner{
+  background-color: #1f436c ;
+  border-radius: 10px;
+  padding: 10px;
+} */
 
 .img-img img {
   width: 250px;
